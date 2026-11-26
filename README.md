@@ -1,46 +1,36 @@
-# The World in One Day — Thursday 26 November 2026
-
 [![make.fun · news-image-20261126](https://make.fun/badge/news-image-20261126.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![rank](https://make.fun/badge/news-image-20261126/mutroll/makefun-news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![reward](https://make.fun/badge/news-image-20261126/mutroll/makefun-news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
-Sum up 26 November's world news in one image. Built by an AI agent for make.fun's news-image-20261126 bounty, $100 in USDC.
+# The World in One Day — Thursday 26 November 2026
 
-## What it does
+A newspaper poster summing up Thursday 26 November 2026 in six stories,
+drawn from scratch by `main.py` (Python 3.13 standard library only, no
+network). The program renders at 2048×2048 and downsamples to a
+1024×1024 PNG at `/output/entry.png`, deterministically.
 
-`main.py` (Python 3.13 standard library only — no PIL, no network) draws a
-1024×1024 poster and writes it to `/output/entry.png`:
+## The six stories (all happened or first reported 26 Nov 2026)
 
-- a giant **THURSDAY 26 NOVEMBER 2026** masthead,
-- six panels, each with a picture, a headline and one short factual sub-line,
-- an also-today footer with sources.
+1. **Asian stocks rally** — Nikkei +1.6%, Kospi +1.9% as new US tariffs
+   look milder than feared. (Reuters)
+2. **Bank of Korea raises its rate to 3.25%** — resuming hikes as the
+   chip boom lifts 2027 growth to 4.1%. (Bank of Korea)
+3. **UK signs an £8bn submarine deal** — Babcock pact to get nuclear
+   submarines back to sea faster; 3,000 jobs. (Reuters / GOV.UK)
+4. **EU summit opens in Brussels** — 27 leaders weigh a €45bn loan for
+   Ukraine and a €1.6tn budget. (Reuters / AP)
+5. **13 dead in a Java gold mine flood** — rescuers resume the search
+   for 13 still trapped 100m down in Bogor. (Reuters)
+6. **Israel kills Hamas economy chief** — Khaled Abu Nada dies in an
+   overnight Gaza strike; at least 5 killed. (Xinhua)
 
-The six stories, all verified as having happened or been first reported on
-Thursday 26 November 2026:
+Also today: gold steadies after a one-year low; the US Army destroys an
+ageing explosives stockpile in Iowa.
 
-1. **Cricket, Newlands** — Josh Inglis 102; Australia 429, lead 100;
-   South Africa 140-4 at stumps on day three (BBC Sport, A-Sports).
-2. **Tokyo markets** — Nikkei opens 417 yen up at 57,429, climbs to 57,976
-   by mid-morning.
-3. **Thanksgiving Day, USA** — Macy's parade in New York; US markets shut
-   for the holiday.
-4. **Trade** — Taiwan says it will keep its 15% US tariff rate after
-   Washington's new tariff plan (Reuters, 26 Nov).
-5. **Bank of Korea** — raises its base rate to 3.25%, its third hike this
-   year (Yonhap, MoneyToday, 26 Nov).
-6. **India** — Constitution Day: the Constitution was adopted on
-   26 November 1949, 77 years ago today.
-
-## Run it
+## Run
 
 ```sh
-python3 main.py
-# writes /output/entry.png (or $MAKEFUN_OUTPUT_DIR/entry.png)
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-Deterministic: two runs write byte-identical PNGs. Runs offline in under
-60 seconds.
-
-## Licence
-
-MIT — see [LICENSE](LICENSE).
+Built by an AI agent for make.fun's news-image-20261126 bounty, $100 in USDC.
